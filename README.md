@@ -30,3 +30,21 @@ Upload your own CSV file or use the provided `demo_sales.csv` to see the analysi
 - Total revenue per product
 - Sales trend over time
 - Top 5 best-selling products
+
+## Command-line Utilities
+
+Additional reports can be generated using `add.py`.
+
+Run the script with a path to your CSV file:
+
+```bash
+python add.py path/to/your_sales.csv
+```
+
+The command produces several files in the working directory:
+
+- `output.csv` and `bargraph.png` &ndash; total revenue per product
+- `last_30_days.csv` &ndash; entries from the most recent 30 days
+- `daily.png` &ndash; daily revenue plot
+- `taxed.csv` &ndash; revenue with calculated tax and net amount
+- `summary.csv` &ndash; per-product summary statistics
